@@ -1,0 +1,71 @@
+.header {
+  padding-bottom: var(--p-space-5);
+
+  &__content {
+    display: flex;
+    margin: 0 auto;
+    padding: var(--p-space-5);
+    align-items: center;
+
+    @media (min-width: 30.625em) {
+      padding: var(--p-space-0);
+    }
+
+    .Polaris-DisplayText {
+      font-weight: var(--p-font-weight-semibold);
+    }
+  }
+
+  &__back {
+    margin-right: 10px;
+    .Polaris-Button {
+      width: 36px;
+    }
+  }
+
+  &__action {
+    display: flex;
+    margin-left: auto;
+    gap: var(--p-space-5);
+    align-items: center;
+    &--secondary {
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 20px;
+      button {
+        &.Polaris-Button {
+          color: var(--p-text);
+          &:hover,
+          &:focus {
+            text-decoration: none !important;
+            color: var(--p-text);
+          }
+        }
+      }
+    }
+    .Polaris-Button {
+      &[aria-expanded] {
+        border-color: transparent;
+        box-shadow: none;
+      }
+      &[aria-expanded="true"],
+      &[aria-expanded]:hover {
+        background-color: var(--p-background-selected);
+      }
+      &[aria-expanded="false"] {
+        background-color: transparent;
+      }
+
+      &--primary {
+        .Polaris-Button__Text {
+          text-transform: capitalize;
+        }
+      }
+
+      .trial-days {
+        font-size: var(--p-space-3);
+        line-height: var(--p-space-3);
+      }
+    }
+  }
+}
