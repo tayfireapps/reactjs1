@@ -11,7 +11,7 @@ const Header = function(props) {
     return (
         <div className="header">
             <div className="header__content">
-                <DisplayText size="small">Dashboard</DisplayText>
+                <DisplayText size="small">{props.title}</DisplayText>
                 <div className="header__action">
                     <div className="header__action--secondary">
                         <button className="Polaris-Button Polaris-Button--plain" type="button"><span className="Polaris-Button__Content"><span className="Polaris-Button__Text">Promo Code</span></span></button>

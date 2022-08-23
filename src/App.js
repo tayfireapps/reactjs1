@@ -5,7 +5,8 @@ import Footer from './components/Footer'
 function App() {
   return (
     <div>
-        <Header title="Import Reviews" actionGroups={null} primaryAction={null} />
+        <Header title="Dashboard" actionGroups={null} primaryAction={null} />
+        <Header title="Manage reviews" actionGroups={null} primaryAction={null} />
         <Footer />
     </div>
   );
